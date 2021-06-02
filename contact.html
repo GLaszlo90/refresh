@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Refresh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <nav>
+      <img src="./assets/refr.jpg" alt="logo" class="logo" />
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="services.html">Szolgáltatásaim</a></li>
+        <li><a href="gallery.html">Galéria</a></li>
+        <li><a href="contact.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+    <div class="contact">
+      <h2>Kapcsolat</h2>
+      <iframe
+        src="https://maps.google.com/maps?q=Ady%20u.%2015%20Beremend%207827&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      ></iframe>
+      <h3>Elérhetőségeim</h3>
+      <h4>Telefonszám</h4>
+      <p class="tel">+36304244741</p>
+      <form action="https://formsubmit.co/botorkaroly@gmail.com" method="POST">
+        <h4>Az Ön e-mail címe</h4>
+        <input type="hidden" name="_subject" value="Új Refresh e-mail!">
+        <input type="email" name="email" placeholder="email" required>
+        <input class="message" rows="20" cols="50" type="text" name="message" required>
+        <button class="btn1" type="submit">Send</button>
+   </form>
+      <!--
+      <form action="mailto:botorkaroly@gmail.com" method="post" enctype="text/plain">
+      <h4>Az Ön e-mail címe</h4>
+      <input type="text" class="adress" autocomplete="off">
+      <textarea class="message" rows="20" cols="50"></textarea>
+      <input class="btn1" type="submit" value="Elküld!" formaction="mailto:boci19880314@gmail.com" formmethod="post">
+    </form>
+  -->
+    </div>
+    <footer>
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <p>© 2020 Refresh, Bótor Károly E.V.</p>
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
