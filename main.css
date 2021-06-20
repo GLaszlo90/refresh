@@ -98,14 +98,14 @@ nav {
   .btn1{
     background-color: #676767;
     color: #D3C54B;
-    
   }
   .btn2{
     background-color: #D3C54B;
     color: #676767;
+    margin-bottom: 100px;
   }
   .services{
-    margin: 0 auto 20px;
+    margin: 0 auto 100px;
     text-align: center;
   }
   .icons{
@@ -118,10 +118,15 @@ nav {
     text-align: center;
   }
   .contact{
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto 70px;
     text-align: center;
     width: 100%;
   }
+
   iframe{
     margin: 0 auto 20px;
     border: solid black 2px;
@@ -163,6 +168,9 @@ nav {
     width: 25%;
   }
   footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     margin-top: 10px;
     display: flex;
     width: 100vw;    
@@ -170,7 +178,6 @@ nav {
     height: 10vh;
     align-items:center;
     justify-content: space-evenly;
-    transform: translateX(-5%);
   }
   footer p{
     color: #D3C54B;
@@ -184,116 +191,163 @@ nav {
     height: 12px;
     color: #D3C54B;
   }
-  
-  @media (min-width: 500px){
+
+  @media (min-width: 710px){
+    a{
+      font-size: 1rem;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    .main{
+      height: 70vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    h1,h2{
+      font-size: 1.5rem;
+      letter-spacing: 1%;
+      margin-bottom: 30px;
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+      width: 30%;
+      height: 100%;
+    }
+    .left{
+      width: 100%;
+      margin: 0;
+    }
+    .content{
+      width: 60%;
+      height: 100%;
+    }
+    .content p{
+      font-size: 1rem;
+      padding: 25px;
+    }
+    .cta{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .btn1,.btn2{
+      width: 40%;
+      margin: 0;
+      padding: 10px 30px;
+    }
+    .services{
+      margin-bottom: 100px;
+    }
     .gird{
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       margin: 0;
-      position: relative;
     }
     .service{
       display: inline-block;
-      width: 40%;
+      width: 25vw;
     }
+    .contact{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 60vh;
+    }
+    .map{
+      height: 100%;
+      width:40%;
+    }
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+    .sender{
+      width: 55%;
+      justify-content: center;
+      align-items: center;
+    }
+    h3{
+      font-size: 1.6rem;
+    }
+    h4{
+      font-size:1.1rem;
+    }
+    footer a{
+      font-size: 2rem;
+    }
+
   }
-  @media (min-width: 850px){
-    body{
-      background-color: white;
+  @media (min-width: 990px){
+    h1,h2{
+      font-size: 2rem;
+      letter-spacing: 1%;
     }
-    
-    footer{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translateX(0%);
+    .content p{
+      font-size: 1.2rem;
+      padding: 20px;
+  }
+}
+
+  @media (min-width: 1152px){
+    a{
+      font-size: 1.2rem;
     }
-    
+    a:hover{
+      text-decoration: underline;
+    }
     .main{
-      margin-top: 5%;
+      height: 70vh;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin: 0;
-      height:60vh;
+      margin-top: 30px;
     }
     h1,h2{
-      font-size: 2rem;
-      font-weight: 700;
-      margin-top: 30px;
+      font-size: 2.2rem;
+      letter-spacing: 1%;
     }
     .profile{
       display: flex;
-      justify-content: center;
-      width: 40vw;
-      margin-top: 30px;
-      align-items: flex-start;
+      align-items: center;
+      width: 20%;
+      height: 100%;
     }
     .left{
-      width: 40%;
+      width: 100%;
       margin: 0;
     }
-    .right img{
+    .content{
+      width: 60%;
+      height: 100%;
+    }
+    .content p{
+      font-size: 1.2rem;
+      padding: 25px;
+    }
+    .cta{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       margin-top: 30px;
     }
-    .content{
-      height: 60vh;
-      width: 60vw;
+    .btn1,.btn2{
+      width: 40%;
+      margin: 0;
+      padding: 10px 30px;
     }
-    .content p{
-      font-size: 1.25rem;
-      font-weight: 550;
-      padding: 30px;
-    }
+ 
   }
-  .cta{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 60vw;
-    position: absolute;
-    right: 0;
-    margin-right: 25px;
-    margin-top: 35px;
-  }
-  .btn1, .btn2{
-    text-align: center;
-    font-size:1rem;
-    width: 40%;
-    padding: 20px 70px;
-    text-decoration: none;
-  }
-  .btn1{
-    background-color: #676767;
-    color: #D3C54B;
-    
-  }
-  .btn2{
-    background-color: #D3C54B;
-    color: #676767;
-  }
-
-  footer a{
-    font-size: 24px;
-  }
-
-  @media (max-width: 1100px){
-    .content p{
-      font-size: 1.1rem;
-    }
-
-    @media (max-width: 960px){
-      .content p{
-        font-size: 1rem;
-      }
-      .btn1, .btn2{
-        padding: 20px 40px
-      }
-  }
-  @media (max-width: 600px){
+  
+  /*KÉSZ*/
+  @media (max-width: 700px){
 .line {
     width: 30px;
     height: 3px;
@@ -324,6 +378,7 @@ nav {
     overflow: hidden;
   }
   .nav-links.open {
+    z-index: 2;
     clip-path: circle(1000px at 50% -50%);
     -webkit-clip-path: circle(1000px at 50% -50%);
     pointer-events: all;
@@ -338,5 +393,4 @@ nav {
     color: #D3C54B;
     font-family: 'Roboto Slab', serif;
   }
-}
 }
